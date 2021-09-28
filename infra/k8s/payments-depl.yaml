@@ -27,15 +27,9 @@ spec:
             - name: MONGO_URI
               value: 'mongodb://payments-mongo-srv:27017/payments'
             - name: JWT_KEY
-              valueFrom:
-                secretKeyRef:
-                  name: jwt-secret
-                  key: JWT_KEY
+              value: 'fg435fd'
             - name: STRIPE_KEY
-              valueFrom:
-                secretKeyRef:
-                  name: stripe-secret
-                  key: STRIPE_KEY
+              value: 'sk_test_51JLit4SC1kt2bE0ZYAPkJ4LJhtYnPieDSIuNwSnqqpVKOgV2LWpJXSH3cgUqI5sm1v8ZPJcsdhWdp19w7o3RnLcn00k8xf5rQY'
 ---
 apiVersion: v1
 kind: Service
