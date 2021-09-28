@@ -8,7 +8,7 @@ build:
   local:
     push: true
   artifacts:
-    - image: augustya07/aut
+    - image: augustya07/auth:latest
       context: auth
       docker:
         dockerfile: Dockerfile
