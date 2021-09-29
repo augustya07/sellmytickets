@@ -15,6 +15,7 @@ spec:
       containers:
         - name: payments
           image: augustya07/payments
+          imagePullPolicy: "Always"          
           env:
             - name: NATS_CLIENT_ID
               valueFrom:
